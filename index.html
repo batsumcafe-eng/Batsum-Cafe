@@ -22,9 +22,8 @@
     <meta name="twitter:description" content="Experience our signature brew at Batsum Cafe! Located at BSU Malvar Campus, open 1 PM to 1 AM daily." />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/batsumcafe-eng/Batsum-Cafe/main/share-me.png" />
     
-    <!-- Pinterest & Instagram Meta Tags -->
+    <!-- Pinterest Meta Tags -->
     <meta property="pinterest:media" content="https://raw.githubusercontent.com/batsumcafe-eng/Batsum-Cafe/main/share-me.png" />
-    <meta property="instagram:image" content="https://raw.githubusercontent.com/batsumcafe-eng/Batsum-Cafe/main/share-me.png" />
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -123,29 +122,44 @@
             border-radius: 50%;
             color: white;
             text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
             font-size: 22px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
         }
         
         .social-btn:hover {
             transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .social-btn:active {
+            transform: scale(0.95);
         }
         
         .facebook {
             background: #1877F2;
         }
         
+        .facebook:hover {
+            background: #0a66c2;
+        }
+        
         .twitter {
             background: #000;
+        }
+        
+        .twitter:hover {
+            background: #333;
         }
         
         .pinterest {
             background: #E60023;
         }
         
-        .instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        .pinterest:hover {
+            background: #ad081b;
         }
         
         .footer {
@@ -189,10 +203,6 @@
             <a href="https://pinterest.com/pin/create/button/?url=https://batsumcafe-eng.github.io/Batsum-Cafe/&media=https://raw.githubusercontent.com/batsumcafe-eng/Batsum-Cafe/main/share-me.png&description=Batsum%20Cafe%20-%20Premium%20Arabica%20Coffee%20%7C%20Hand-selected%20beans%20from%20Central%20%26%20South%20America" target="_blank" rel="noopener noreferrer" class="social-btn pinterest" title="Share on Pinterest">
                 <i class="fab fa-pinterest-p"></i>
             </a>
-            
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Follow on Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
         </div>
         
         <div class="footer">
@@ -201,4 +211,3 @@
     </div>
 </body>
 </html>
-
